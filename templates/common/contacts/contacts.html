@@ -63,12 +63,9 @@
                     <h2>Изпратете ни съобщение</h2>
 
                     <form action="https://formsubmit.co/andon.go6ev@gmail.com" method="POST">
-                        {% csrf_token %}
                         <input type="hidden" name="_captcha" value="false">
                         <input type="hidden" name="_next" value="{% url 'message-sent' %}">
                         <input type="hidden" name="_subject" value="Съобщение от контактната форма в сайта">
-                        <input type="hidden" name="_autoresponse"
-                               value="Вашето съобщение беше изпратено успешно. Ще се свържа с вас възможно най-скоро.">
 
                         <input type="text" name="name" placeholder="Вашето име" required>
                         <input type="email" name="email" placeholder="Вашият имейл" required>
