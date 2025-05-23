@@ -1,0 +1,119 @@
+{% load static %}
+
+<section id="testimonials">
+
+    <div id="testimonials-heading">
+
+        <p>Отзиви</p>
+        <h2>Какво казват нашите клиенти</h2>
+
+    </div>
+
+
+    <div id="testimonials-cards">
+
+        <div class="t-card">
+            <img src="{% static 'images/profile-female.png' %}" alt="Профилна снимка жена">
+
+
+            {#            <div class="t-profile">#}
+            {##}
+            {##}
+            {#            </div>#}
+
+            <p>Благодаря на г-жа Шкодрова за професионалното отношение,добрите обноски и търпение.Винаги усмихната
+                ,учтива и готова да отговори на всеки въпрос по всяко време. Горещо препоръчвам Дарс Имоти!
+            </p>
+
+            <hr>
+
+            <div class="name-stars">
+
+                <p>Тони Димитрова</p>
+
+                <div class="star-rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="t-card">
+
+            <img src="{% static 'images/profile-female.png' %}" alt="Профилна снимка жена">
+
+
+            <p>Мога да кажа,че Дарс имоти е една от най добрите агенции в Пловдив.Изключителен професионализъм,и
+                индивидуално отношение към нуждите и изискванията на всеки един клиент.Горещо препоръчвам Снежана
+                Шкодрова,изключително търпелива,коректна и изпълнителна.</p>
+
+            <hr>
+
+            <div class="name-stars">
+
+                <p>Ваня Декова</p>
+
+                <div class="star-rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="t-card">
+
+            <img src="{% static 'images/profile-female.png' %}" alt="Профилна снимка">
+
+
+            <p>Снежана Шкодрова е професионалист, който напълно разбира нуждите и възможностите на своите клиенти. Не пести време и енергия за да намери правилното жилище. Горещо препоръчвам!</p>
+
+            <hr>
+
+            <div class="name-stars">
+
+                <p>Мария Вълчева</p>
+
+                <div class="star-rating">
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.from(".t-card", {
+            scrollTrigger: {
+                trigger: "#testimonials-cards",
+                start: "top 75%",
+                toggleActions: "play none none none"
+            },
+            opacity: 0,
+            y: 40,
+            duration: 1,
+            stagger: 0.6,
+            ease: "power2.out"
+        });
+    });
+</script>

@@ -1,0 +1,170 @@
+#cta {
+    width: 90%;
+}
+
+#cta-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 2em;
+}
+
+#cta-media {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cta-img-ct {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#cta-img-ct img {
+    width: 100%;
+    object-fit: cover;
+    border-bottom-left-radius: 20%;
+}
+
+#cta-yellow {
+    position: absolute;
+    width: 78% !important;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#cta-copy {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#cta-inner-copy {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+
+#cta-inner-copy h2 {
+    font-size: 2em;
+    line-height: 1em;
+}
+
+#cta-cta {
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1em;
+}
+
+#cta-cta-buttons {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+}
+
+#cta-cta-buttons a {
+    font-size: 1em;
+    font-weight: 600;
+    width: 50%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 0.8em;
+    color: #f4f4f4;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#cta-contacts {
+    background-color: #0a612d;
+}
+
+#cta-properties {
+    background-color: #0C1F59;
+}
+
+#cta-dec-line {
+    width: 100%;
+    height: 1em;
+    border-radius: 25px;
+    background-color: #525250;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#sm-ct {
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+
+    #cta-copy {
+        gap: 1em;
+    }
+
+    #cta-cta-buttons {
+        flex-direction: column;
+    }
+
+    #cta-cta-buttons a {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 780px) {
+
+    #sm-ct {
+        display: block;
+    }
+
+    #lg-ct {
+        display: none;
+    }
+
+    #cta-wrapper {
+        flex-direction: column;
+    }
+
+    #cta-media {
+        width: 100%;
+        justify-content: start;
+    }
+
+    #cta-img-ct {
+        width: 50%;
+    }
+
+    #cta-copy {
+        font-size: 0.9em;
+    }
+
+    #cta-cta-buttons {
+        flex-direction: row;
+    }
+
+    #cta-cta-buttons a {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    #cta-media {
+        gap: 1em;
+    }
+
+    #sm-ct {
+        font-size: 1em;
+    }
+
+}

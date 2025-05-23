@@ -1,0 +1,97 @@
+#services {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+#services h2 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+#services > p {
+    text-align: center;
+}
+
+#services-ct {
+    width: 100%;
+    display: flex;
+    gap: 1em;
+    overflow-x: auto;
+}
+
+.service-card {
+    width: 280px;
+    padding: 1em;
+    flex: 1 0 auto;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #dadada;
+    border-radius: 15px;
+    gap: 0.5em;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.5em;
+    margin-right: 0.5em;
+    background-color: #fff;
+}
+
+.media-copy-ct {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.media-ct {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: #e1e0d9;
+    box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.1);
+    border: 1px solid #c6c6c6;
+}
+
+.media-ct img {
+    width: 80%;
+    aspect-ratio: 1/1 !important;
+}
+
+.service-more-ct {
+    height: auto;
+    display: flex;
+    justify-content: end;
+}
+
+.service-cta {
+    background-color: #475c9e;
+    color: white;
+    padding: 0.2em 1em;
+    border-radius: 15px;
+}
+
+#services {
+    gap: 1em;
+}
+
+@media (max-width: 580px) {
+
+    #services {
+        gap: 1em;
+    }
+
+    #services > p {
+        font-size: 0.8em;
+        text-align: left;
+    }
+
+    .service-cta {
+        font-size: 0.8em;
+        text-decoration: none;
+        margin-top: -0.5em;
+    }
+
+}

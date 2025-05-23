@@ -1,0 +1,99 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}
+    Контакти
+{% endblock %}
+
+{% block content %}
+
+    <div id="contacts-wrapper">
+
+        <section id="contacts">
+
+            <h1>Свържете се с нас</h1>
+
+            <div id="contacts-content">
+
+                <div id="contacts-info">
+
+                    <h2>Нашите контакти</h2>
+
+                    <p>Дарс Имоти е тук, за да направи покупката или продажбата на вашия имот приятно преживяване.</p>
+
+                    <ul>
+                        <li>
+                            <img src="{% static 'images/phone.png' %}" alt="Икона на телефон">
+                            <a href="tel:+359885648335">+359 885 648 335</a>
+                        </li>
+                        <li>
+                            <img src="{% static 'images/phone.png' %}" alt="Икона на телефон">
+                            <a href="tel:+359878648335">+359 878 648 335</a>
+                        </li>
+                        <li>
+                            <img src="{% static 'images/mail.png' %}" alt="Икона на имейл">
+                            <a href="mailto:darsimoti@abv.bg">darsimoti@abv.bg</a>
+                        </li>
+                        <li>
+                            <img src="{% static 'images/mail.png' %}" alt="Икона на имейл">
+                            <a href="mailto:snejanashkodrova2@abv.bg">snejanashkodrova2@abv.bg</a>
+                        </li>
+                        <li>
+                            <img src="{% static 'images/location.png' %}" alt="Икона на местоположение">
+                            <a href="https://maps.app.goo.gl/QKc6hqzi9FqHV61q9" target="_blank" rel="noopener">
+                                бул. „Освобождение“ 33, 4000 Пловдив
+                            </a>
+                        </li>
+                    </ul>
+
+
+                    <div id="contacts-socials">
+                        <a href="https://www.facebook.com/dars031227" target="_blank" rel="noopener">
+                            <img src="{% static 'images/facebook.png' %}" alt="Фейсбук страница на Dars Imoti">
+                        </a>
+
+                        {#                        <a href="#"><img src="/static/images/instagram.png" alt="Instagram"></a>#}
+                        {#                        <a href="#"><img src="/static/images/tiktok.png" alt="TikTok"></a>#}
+                    </div>
+
+                </div>
+
+                <div id="contacts-form">
+
+                    <h2>Изпратете ни съобщение</h2>
+
+                    <form action="https://formsubmit.co/andon.go6ev@gmail.com" method="POST">
+                        {% csrf_token %}
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="{% url 'izprateno-uspeshno' %}">
+                        <input type="hidden" name="_subject" value="Съобщение от контактната форма в сайта">
+                        <input type="hidden" name="_autoresponse"
+                               value="Вашето съобщение беше изпратено успешно. Ще се свържа с вас възможно най-скоро.">
+
+                        <input type="text" name="name" placeholder="Вашето име" required>
+                        <input type="email" name="email" placeholder="Вашият имейл" required>
+                        <textarea name="message" placeholder="Вашето съобщение" required></textarea>
+                        <button type="submit" class="cta-button">Изпрати</button>
+                    </form>
+
+
+                </div>
+
+            </div>
+
+            <div id="contacts-map">
+
+                <h2>Нашият офис</h2>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2958.4337102957434!2d24.78762747554098!3d42.141004948913675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14acd1fbbce6fc31%3A0x426f1a3d51d93224!2z0JDQs9C10L3RhtC40Y8sLCDQlNCQ0KDQoSDQmNCc0J7QotCYJyc!5e0!3m2!1sbg!2sbg!4v1747486720437!5m2!1sbg!2sbg"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+{% endblock %}

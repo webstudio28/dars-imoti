@@ -1,0 +1,95 @@
+{% load static %}
+
+<div id="header-wrapper">
+
+    <div id="header-additional-ct">
+
+        <div id="header-socials">
+
+            <a href="https://www.facebook.com/dars031227" target="_blank" rel="noopener">
+                <img src="{% static 'images/facebook.png' %}" alt="Фейсбук страница на Дарс Имоти">
+            </a>
+            {#            <a href=""><img src="{% static 'images/instagram.png' %}"></a>#}
+            {#            <a href=""><img src="{% static 'images/tiktok.png' %}"></a>#}
+
+        </div>
+
+        <div id="header-contacts">
+
+            <a id="header-additional-phone-primary" href="tel:+359885648335">
+                <img src="{% static 'images/phone.png' %}" alt="Телефон Дарс Имоти"> +359 885 648 335
+            </a>
+            <a id="header-additional-phone" href="tel:+359878648335">
+                <img src="{% static 'images/phone.png' %}" alt="Телефон Дарс Имоти"> +359 878 648 335
+            </a>
+            <a id="header-additional-mail" href="mailto:darsimoti@abv.bg">
+                <img src="{% static 'images/mail.png' %}" alt="Имейл до Дарс Имоти"> darsimoti@abv.bg
+            </a>
+            <a id="header-additional-location" href="https://maps.app.goo.gl/QKc6hqzi9FqHV61q9" target="_blank"
+               rel="noopener">
+                <img src="{% static 'images/location.png' %}" alt="Локация на офиса Дарс Имоти"> Офис
+            </a>
+
+        </div>
+
+
+    </div>
+
+    <div id="header-ct">
+
+        <div id="logo-and-nav-ct">
+
+            <a href="{% url 'home' %}">
+                <div id="header-logo">
+                    <img src="{% static 'images/logo.png' %}" alt="Дарс Имоти - Начало">
+                </div>
+            </a>
+
+
+            <div id="header-nav-section">
+
+                <ul id="header-nav">
+
+                    <a href="{% url 'home' %}">
+                        <li>Начало</li>
+                    </a>
+                    <a href="{% url 'about' %}">
+                        <li>За нас</li>
+                    </a>
+                    <a href="{% url 'pricing' %}">
+                        <li>Услуги</li>
+                    </a>
+                    <a href="{% url 'faq' %}">
+                        <li>Вашите въпроси</li>
+                    </a>
+                    <a href="{% url 'news' %}">
+                        <li>Новини</li>
+                    </a>
+                    <a href="{% url 'contacts' %}">
+                        <li>Контакти</li>
+                    </a>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div id="header-cta-mobile-nav">
+
+            <button id="header-cta" onclick="window.open('https://www.alo.bg/users/darsimoti', '_blank')">
+                Актуални имоти
+            </button>
+
+
+            <div id="mobile-nav">{% include 'base/header/mobile-nav.html' %}</div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="{% static 'js/header-animations.js' %}"></script>

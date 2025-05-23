@@ -1,0 +1,43 @@
+{% extends 'base/base.html' %}
+
+
+{% block title %}
+    Изпратено успешно
+{% endblock %}
+
+{% block content %}
+<style>
+    .message-sent-wrapper {
+        margin: auto;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 75vh;
+    }
+
+    .message-box {
+        background-color: white;
+        border-radius: 1em; /* roughly 15px if 1m = 15px */
+        color: green;
+        text-align: center;
+        box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+        width: 100%;
+        padding: 2em 0 ;
+    }
+
+    .home-link {
+        display: inline-block;
+        margin-top: 1.5em;
+        color: green;
+        text-decoration: underline;
+    }
+</style>
+
+<div class="message-sent-wrapper">
+    <div class="message-box">
+        <h2>Съобщението беше изпратено успешно!</h2>
+        <a href="/" class="home-link">Обратно към началната страница</a>
+    </div>
+</div>
+{% endblock %}

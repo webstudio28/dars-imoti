@@ -1,0 +1,126 @@
+#about-top-wrapper {
+    width: 90%;
+}
+
+#about-top-section {
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    display: flex;
+    gap: 2em;
+}
+
+#about-top-text-container {
+    position: relative;
+    font-size: 1.2em;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-title {
+    display: none;
+}
+
+#about-top-text-container h1 {
+    font-size: 3.2em;
+}
+
+#about-top-text-container h1, #about-top-text-container p {
+    width: 100%;
+    z-index: 2;
+}
+
+.about-title-span {
+    color: #CFAE4F;
+    font-weight: 200;
+}
+
+#about-yellow-dec {
+    z-index: 0;
+    width: 120%;
+    position: absolute;
+    left: 17%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    /*box-shadow: inset 5px 10px 2px rgb(197, 204, 213);*/
+    border-radius: 50%;
+}
+
+
+#about-top-image-container {
+    position: relative;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+#about-top-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+}
+
+#about-top-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+
+@media (max-width: 1000px) {
+
+    #about-top-text-container h1 {
+        line-height: 0.8em;
+        margin-bottom: 0.2em;
+    }
+
+}
+
+@media (max-width: 580px) {
+
+    #about-top-section {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #about-top-text-container {
+        width: 100%;
+        order: 2;
+    }
+
+    #about-top-text-container h1 {
+        display: none;
+    }
+
+    #about-top-text-container p {
+        font-size: 0.9em;
+    }
+
+    #about-title {
+        display: block;
+        font-size: 2.5em;
+        line-height: 0.5em;
+    }
+
+    #about-top-image-container {
+        width: 100%;
+        gap: 1em;
+        justify-content: space-between;
+    }
+
+    #about-top-image {
+        width: 50%;
+    }
+
+    #about-top-image img {
+        border-radius: 15px;
+    }
+
+}

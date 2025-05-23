@@ -1,0 +1,130 @@
+#contacts-wrapper {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2em 0;
+}
+
+#contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#contacts h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#contacts-content {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+#contacts-info, #contacts-form, #contacts-map {
+    background: #fff;
+    padding: 1.5em;
+    border-radius: 25px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contacts-info h2, #contacts-form h2, #contacts-map h2, #contacts-calendly h2 {
+    font-size: 24px;
+    color: #0C1F59;
+    margin-bottom: 15px;
+}
+
+#contacts-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contacts-info li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+#contacts-info li a {
+    color: #0a3077;
+}
+
+#contacts-info li img {
+    width: 16px;
+    height: 16px;
+}
+
+#contacts-socials {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+#contacts-socials img {
+    width: 24px;
+    height: 24px;
+}
+
+#contacts-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#contacts-form input, #contacts-form textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1em;
+}
+
+#contacts-form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+#contacts-form button {
+    background-color: #0C1F59;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#contacts-map iframe {
+    width: 100%;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    #contacts h1 {
+        font-size: 28px;
+    }
+
+    #contacts-info h2, #contacts-form h2, #contacts-map h2 {
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 580px) {
+    #contacts h1 {
+        font-size: 28px;
+    }
+
+    #contacts-info h2, #contacts-form h2, #contacts-map h2 {
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    #contacts-form input, #contacts-form textarea {
+        font-size: 0.9em;
+    }
+}

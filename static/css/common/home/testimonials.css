@@ -1,0 +1,90 @@
+#testimonials {
+    background: #F4F4F4;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    border-radius: 25px;
+    gap: 1em;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#testimonials-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#testimonials-cards {
+    width: 100%;
+    padding: 2em 0 2em 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2em;
+    row-gap: 4em;
+    flex-wrap: wrap;
+}
+
+.t-card {
+    flex: 1 1 auto;
+    min-width: 200px!important;
+    max-width: 390px!important;
+    min-height: 250px;
+    padding: 2em 1em 1em 1em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    background-color: white;
+    border-radius: 25px;
+}
+
+/*.t-profile {*/
+/*    position: absolute;*/
+/*    top: -10%;*/
+/*    left: 10%;*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*    overflow: hidden;*/
+/*    border-radius: 50%;*/
+/*}*/
+
+.t-card img {
+    position: absolute;
+    top: -10%;
+    left: 10%;
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.name-stars {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.star-rating {
+  display: flex;
+  font-size: 1em;
+  color: gold;
+}
+
+.star {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+
+@media (max-width: 580px) {
+
+    #testimonials-cards {
+        padding: 2em 0 0 0;
+        font-size: 0.9em;
+    }
+
+}

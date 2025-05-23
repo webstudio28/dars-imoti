@@ -1,0 +1,96 @@
+{% load static %}
+<div id="footer-wrapper">
+
+    <div class="footer-container">
+
+        <!-- Контакти -->
+        <div class="footer-column">
+            <h4>Контакти</h4>
+            <ul>
+                <li>
+                    <a href="tel:+359885648335">
+                        <img src="{% static 'images/phone.png' %}" alt="Телефонен номер: +359 885 648 335">
+                        +359 885 648 335
+                    </a>
+                </li>
+                <li>
+                    <a href="tel:+359878648335">
+                        <img src="{% static 'images/phone.png' %}" alt="Телефонен номер: +359 878 648 335">
+                        +359 878 648 335
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:darsimoti@abv.bg">
+                        <img src="{% static 'images/mail.png' %}" alt="Имейл: darsimoti@abv.bg">
+                        darsimoti@abv.bg
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:snejanashkodrova2@abv.bg">
+                        <img src="{% static 'images/mail.png' %}" alt="Имейл: snejanashkodrova2@abv.bg">
+                        snejanashkodrova2@abv.bg
+                    </a>
+                </li>
+                <li>
+                    <a href="https://maps.app.goo.gl/QKc6hqzi9FqHV61q9" target="_blank">
+                        <img src="{% static 'images/location.png' %}" alt="Адрес: бул. „Освобождение“ 33, Пловдив">
+                        бул. „Освобождение“ 33, Пловдив
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h4>Услуги</h4>
+            <ul>
+                <li>Покупко-продажба /наеми</li>
+                <li>Финансови решения</li>
+                <li>Управление на имоти</li>
+                <li>Строително ремонтни дейности</li>
+            </ul>
+        </div>
+
+        <!-- Меню -->
+        <div class="footer-column">
+            <h4>Бързи връзки</h4>
+            <ul>
+                <li><a href="{% url 'home' %}">Начало</a></li>
+                <li><a href="{% url 'about' %}">За нас</a></li>
+                <li><a href="{% url 'pricing' %}">Услуги</a></li>
+                <li><a href="{% url 'faq' %}">Вашите въпроси</a></li>
+                <li><a href="{% url 'news' %}">Новини</a></li>
+                <li><a href="{% url 'contacts' %}">Контакти</a></li>
+            </ul>
+        </div>
+
+        <!-- Социални мрежи -->
+        <div class="footer-column">
+            <h4>Последвайте ни</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/dars031227" target="_blank">
+                    <img src="{% static 'images/facebook.png' %}" alt="Фейсбук страница на Дарс Имоти">
+
+                </a>
+                {#                <a href="https://instagram.com/yourpage" target="_blank">#}
+                {#                    <img src="{% static 'images/instagram.png' %}" alt="Instagram">#}
+                {#                </a>#}
+                {#                <a href="https://tiktok.com/@yourpage" target="_blank">#}
+                {#                    <img src="{% static 'images/tiktok.png' %}" alt="TikTok">#}
+                {#                </a>#}
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 "Аг-я "ДАРС ИМОТИ"ЕООД. Всички права запазени.</p>
+        <p>
+            <a href="{% url 'cookies-page' %}">Политика за поверителност</a> |
+        </p>
+        <a href="https://www.webstudio28.com" target="_blank"><img style="width: 10em; margin-top: 1em"
+                                                                   src="{% static 'images/made-by-white.png' %}"
+                                                                   alt="Този сайт е изработен от WebStudio28"></a>
+    </div>
+</div>
+

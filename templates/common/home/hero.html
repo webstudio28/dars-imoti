@@ -1,0 +1,53 @@
+{% load static %}
+
+<section id="hero">
+
+    <div id="hero-wrapper">
+
+        <div id="hero-copy-cta">
+
+            <img id="yellow-dec" src="{% static 'images/yellow-circle.png' %}" alt="Жълт декоративен елемент">
+            
+            <img id="gray-dec" src="{% static 'images/gray-circle.png' %}" alt="Сив декоративен елемент">
+
+
+            <div id="hero-copy">
+
+                <h1>ВАШИТЕ МЕЧТИ СА<br><span>НАША МИСИЯ</span></h1>
+                <p>От първия оглед до ключа в ръцете ви <br>-до вас на всяка стъпка.</p>
+
+            </div>
+
+            <div id="hero-cta">
+
+                <div id="hero-cta-buttons">
+
+                    <a href="{% url 'contacts' %}" id="hero-contacts">Контакти</a>
+                    <a href="https://www.alo.bg/users/darsimoti" id="hero-properties">Разгледай имотите</a>
+
+                </div>
+
+                {#                <div id="hero-dec-line"></div>#}
+
+            </div>
+
+        </div>
+
+        <div id="hero-media">
+
+            <div id="hero-img-ct">
+
+                <img src="{% static 'images/hero-image.jpg' %}"
+                     alt="Снимка на интериор в началната страница на Дарс Имоти">
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% block scripts %}
+    <script src="{% static 'js/home-hero-animation.js' %}"></script>
+{% endblock %}

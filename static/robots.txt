@@ -1,0 +1,9 @@
+User-agent: Googlebot
+Allow: /
+Disallow: /izprateno-uspeshno
+Disallow: /politika-za-poveritelnost
+
+User-agent: *
+Disallow: /
+
+Sitemap: https://www.darsimoti.com/sitemap.xml

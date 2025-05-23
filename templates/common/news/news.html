@@ -1,0 +1,60 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}
+    Новини Дарс Имоти
+{% endblock %}
+
+{% block content %}
+
+    <div id="news-wrapper">
+        <section id="news">
+            <h1>Новини от сектора</h1>
+            <div id="news-content">
+
+                {% for slug, news in all_news.items %}
+                    
+                    <div class="sector-n-ct">
+
+                        <div class="sector-n-media">
+                            <img src="{% static 'images/' %}{{ news.article_image }}.jpg" alt="{{ news.title }}">
+                        </div>
+
+                        <p>{{ article_image }}</p>
+
+                        <div class="sector-copy">
+
+                            <h2>{{ news.title }}</h2>
+
+                            <p>{{ news.introduction|truncatechars:300 }}</p>
+
+                            <div class="author-cta">
+
+                                <div class="author">
+
+                                    <div class="author-image">
+
+                                        <img src="{% static 'images/snejana-shkodrova.jpg' %}" alt="Снежана Шкодрова">
+
+                                    </div>
+
+                                    <p>Снежана Шкодрова</p>
+
+
+                                </div>
+
+                                <a href="{% url 'news_detail' slug %}" class="sector-news-cta">Прочети още</a>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                {% endfor %}
+
+            </div>
+        </section>
+    </div>
+
+{% endblock %}

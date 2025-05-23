@@ -1,0 +1,30 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}
+    ДАРС ИМОТИ
+{% endblock %}
+
+{% block content %}
+
+    <div id="home-wrapper">
+
+        {% include 'common/home/hero.html' %}
+
+        {% include 'common/home/stats.html' %}
+
+        {% include 'common/home/services.html' %}
+
+        {% include 'common/home/testimonials.html' %}
+        
+        {% include 'common/home/sector-news.html' %}
+    
+        {% include 'common/home/faq.html' %}
+    
+        {% include 'common/home/cta.html' %}
+
+    </div>
+
+
+{% endblock %}
+

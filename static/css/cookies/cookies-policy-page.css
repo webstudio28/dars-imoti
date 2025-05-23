@@ -1,0 +1,53 @@
+#cookie-consent-policy-wrapper {
+  font-family: sans-serif;
+  padding: 2em;
+  max-width: 960px;
+  margin: auto;
+  font-size: 1em;
+}
+
+.policy-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+}
+
+.policy-container h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+}
+
+.policy-container h2 {
+  font-size: 1.5em;
+  margin-top: 1em;
+  color: #333;
+}
+
+.policy-container h3 {
+  font-size: 1.2em;
+  margin-top: 1em;
+  color: #444;
+}
+
+.policy-container p {
+  line-height: 1.6;
+  font-size: 1em;
+  color: #222;
+}
+
+.policy-container a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.policy-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.policy-update-date {
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: #555;
+}

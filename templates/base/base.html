@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    {% block head %}
+    {% endblock %}
+    <meta charset="UTF-8">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <meta name="description"
+          content="Дарс Имоти има дългогодишен опит в бранша с недвижими имоти на територията на България. Работим с внимание и любов към клиента, защото знаем, че покупката и продажбата на имот са важна част от живота на всеки човек.">
+    <meta name="keywords" content="real estate, Plovdiv, Bulgaria, apartments for sale, houses for rent, property Plovdiv, недвижими имоти, агенция недвижими имоти, имоти под наем, имоти за продажба">
+    <meta name="author" content="WebStudio28">
+
+
+
+    <meta property="og:title" content="Дарс Имоти">
+    <meta property="og:description" content="Дарс Имоти – с дългогодишен опит в недвижимите имоти в България. Работим с внимание и грижа, защото знаем колко важна стъпка е покупката или продажбата на имот."">
+    <meta property="og:image" content="{% static 'images/socials-paste.png' %}">
+    <meta property="og:url" content="https://dars-imoti.com">
+
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'images/icons/favicon.ico' %}"
+          style="width: 32px; height: 32px">
+
+
+    <script src="{% static 'js/gsap.min.js' %}"></script>
+    <script src="{% static 'js/ScrollTrigger.min.js' %}"></script>
+
+
+    <link rel="stylesheet" id="silktide-consent-manager-css"
+          href="{% static 'css/cookies/silktide-consent-manager.css' %}">
+    <script src="{% static 'js/cookies/silktide-consent-manager.js' %}"></script>
+    <script src="{% static 'js/cookies/cookiesHeadScript.js' %}" defer></script>
+
+    <meta name="theme-color" content="#525251">
+</head>
+
+<body>
+
+<div class="site">
+
+    <header>
+
+        {% include 'base/header/header.html' %}
+
+    </header>
+
+    <main>
+
+        {% block content %}
+        {% endblock %}
+
+    </main>
+
+    <footer>
+
+        {% include 'base/footer/footer.html' %}
+
+    </footer>
+
+    {% block scripts %}
+
+    {% endblock %}
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block title %}
+    За нас
+{% endblock %}
+
+{% block content %}
+
+    <div id="about-wrapper">
+
+        {% include 'common/about/top-section.html' %}
+
+        {% include 'common/about/work-road.html' %}
+    
+        {% include 'common/about/team.html' %}
+    
+    </div>
+
+
+{% endblock %}
