@@ -2,6 +2,8 @@ from django.http import Http404
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
+from django_base.settings import EMAIL_ACTIVATION_CODE
+
 NEWS_DATA = {
     'nay-dobrite-kvartali-za-zhiveene-v-plovdiv': {
         'article_image': 'nai-dobri-kvartali',
@@ -119,9 +121,10 @@ class PricingView(TemplateView):
 class ContactsView(TemplateView):
     template_name = 'common/contacts/contacts.html'
 
-
-class MessageSentSuccessfullyView(TemplateView):
-    template_name = 'common/contacts/message-sent.html'
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['activation_code'] = EMAIL_ACTIVATION_CODE
+        return context
 
 
 class FaqView(TemplateView):
