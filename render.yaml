@@ -4,7 +4,7 @@ services:
     name: django_base
     runtime: python
     buildCommand: "./build.sh"
-    startCommand: "python -m gunicorn django_base.asgi:application -k uvicorn.workers.UvicornWorker"
+    startCommand: "gunicorn django_base.asgi:application -k uvicorn.workers.UvicornWorker --workers 4 --timeout 60"
     envVars:
       - key: SECRET_KEY
         generateValue: true
